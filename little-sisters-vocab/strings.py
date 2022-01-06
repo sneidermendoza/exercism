@@ -45,5 +45,6 @@ def noun_to_verb(sentence, index):
     is split apart.  The function should return the extracted
     adjective as a verb.
     """
-    return root + "en" if not (root:=sentence.split(" ")[index])[-1] in string.punctuation else root[:-1] + "en"
+    return root + "en" if not (root:=sentence.split(" ")[index])[-1]\
+        in string.punctuation else root[:-1] + "en"
     
